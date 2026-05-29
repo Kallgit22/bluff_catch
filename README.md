@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # bluff_catch
 
 A new Flutter project.
@@ -15,3 +16,6 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+=======
+# bluff_catch
+>>>>>>> 73ffa6958ded7d1205a349353b7806ef6183a89f
