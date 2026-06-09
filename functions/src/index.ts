@@ -174,3 +174,5 @@ export const leaveMatch = onCall(async (request) => {
   }
   return result;
 });
+
+export { onUserCreated } from "./actions/on_user_created";
