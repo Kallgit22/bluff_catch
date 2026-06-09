@@ -1,5 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import '../../features/auth/presentation/providers/auth_provider.dart';
+import '../../features/profile/presentation/providers/profile_provider.dart';
 
 // Provides the SharedPreferences instance synchronously
 final sharedPreferencesProvider = Provider<SharedPreferences>((ref) {
@@ -57,6 +59,12 @@ class SettingsNotifier extends Notifier<SettingsState> {
   void setTheme(String themeId) {
     _prefs.setString(_themeKey, themeId);
     state = state.copyWith(themeId: themeId);
+    
+    // Sync to Firestore if user is logged in
+    final user = ref.read(currentUserProvider);
+    if (user != null) {
+      ref.read(profileRepositoryProvider).updateTheme(user.uid, themeId);
+    }
   }
 
   void toggleSound() {

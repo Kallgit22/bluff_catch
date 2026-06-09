@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1019004615710",
+    "firebase_url": "https://bluff-catch-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "bluff-catch",
+    "storage_bucket": "bluff-catch.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1019004615710:android:1d9205710a2dfeda68020f",
+        "android_client_info": {
+          "package_name": "com.bluffcatch.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1019004615710-vmthfgj0661o2mo314br1h90h16v5ct3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKJ6u5V9ccNHjOGLtykTcqqaRGEksYFy4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1019004615710-vmthfgj0661o2mo314br1h90h16v5ct3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1019004615710-0nhkl6f4ta4hnalhkc23h1n2jf4rm880.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.bluffcatch.bluffCatch"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

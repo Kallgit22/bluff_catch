@@ -1,0 +1,62 @@
+{
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "disallowLegacyRuntimeConfig": true,
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ]
+    }
+  ],
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "storage": {
+    "rules": "storage.rules"
+  },
+  "emulators": {
+    "auth": {
+      "port": 9099
+    },
+    "functions": {
+      "port": 5001
+    },
+    "firestore": {
+      "port": 8080
+    },
+    "ui": {
+      "enabled": true,
+      "port": 4000
+    },
+    "singleProjectMode": true
+  },
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "bluff-catch",
+          "appId": "1:1019004615710:android:07bde03a63697d5968020f",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "bluff-catch",
+          "configurations": {
+            "android": "1:1019004615710:android:07bde03a63697d5968020f",
+            "ios": "1:1019004615710:ios:751c944572a3fd0868020f",
+            "macos": "1:1019004615710:ios:751c944572a3fd0868020f",
+            "web": "1:1019004615710:web:661c147cbfa9baf768020f",
+            "windows": "1:1019004615710:web:743348a93568bb3a68020f"
+          }
+        }
+      }
+    }
+  }
+}
